@@ -25,10 +25,10 @@ function Home() {
  <>
  <Navbar/>
 
- <section className="mt-[50px] flex flex-col lg:flex-row items-center justify-around bg-gray-200  w-full h-fit lg:h-[90vh]">
+ <section className="mt-[50px] flex flex-col lg:flex-row items-center justify-around bg-gray-200  overflow-hidden w-full h-fit lg:h-[90vh]">
   <div className="w-[80%] mt-44 md:mt-0 lg:w-[40%] mx-auto flex flex-col justify-center gap-5 h-full  relative p-0 md:p-16">
     <span className="  absolute top-auto md:top-auto md:left-[10%] w-[350px] h-[350px] rounded-full opacity-20  bg-cyan-400  rounded-br-2xl z-[1]"></span>
-    <h1 className="text-[60px] font-serif " style={{fontWeight:"900"}}>DISCOVER MEN`S <br />LATEST <span className="w-fit p-2 bg-cyan-500 text-white">FASHION</span></h1>
+    <h1 className=" text-[40px] md:text-[60px] font-serif " style={{fontWeight:"900"}}>DISCOVER MEN`S <br />LATEST <span className="w-fit p-2 bg-cyan-500 text-white">FASHION</span></h1>
     <p className="text-lg font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam am Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,</p>
     <button className="w-[150px] h-[50px] bg-cyan-500 text-white rounded-tr-xl rounded-bl-2xl ">call now</button>
   </div>
@@ -115,8 +115,8 @@ function Home() {
  <section className="mt-52   w-full bg-gray-200 pt-10  ">
  <h1 className="text-4xl font-bold text-center" > our proudct in store</h1>
 <p className="text-lg text-center font-bold text-gray-400 mt-5" > Lorem ipsum dolor, sit amet consectetur  . Eaque, maxime?</p>
-<div className="w-[70%] flex items-center justify-center mx-auto ">
-  <ul className="flex items-center text-2xl mx-auto mt-8 font-extrabold justify-center gap-10 w-full" style={{
+<div className="w-[90%] md:w-[70%] flex items-center justify-center mx-auto ">
+  <ul className="flex items-center text-md md:text-2xl mx-auto mt-8 font-extrabold justify-center gap-2 md:gap-10 w-full" style={{
 fontWeight:"900",fontFamily:"sans-serif"
   }}>
     <li className="text-cyan-500 rounded-md underline  bg-cyan-100">All</li>
@@ -129,7 +129,7 @@ fontWeight:"900",fontFamily:"sans-serif"
 
 {objects.map((obj,id)=>(
 <>
-<div className="w-[300px] h-[500px] flex flex-col justify-center items-center  mt-12 hover:scale-110 duration-1000 hover:opacity-80  hover:rotate-[-2deg]" key={id} >
+<div className="w-[90%] md:w-[300px] h-[500px] flex flex-col justify-center items-center  mt-12 hover:scale-110 duration-1000 hover:opacity-80  hover:rotate-[-2deg]" key={id} >
   <div className="w-full h-[80%]">
   <img src={obj.image} className="w-full h-full " alt="" />
 

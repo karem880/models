@@ -32,7 +32,7 @@ function Navbar() {
   
     return (
         <>
-               <header className=' hidden md:flex justify-evenly  w-full fixed top-0 left-0 bg-white z-50  h-[100px]  overflow-hidden  items-center drop-shadow-2xl '>
+               <header className=' hidden md:flex justify-evenly  w-full fixed top-0 left-0 bg-white z-50  h-[100px]  overflow-hidden   items-center drop-shadow-2xl '>
                <h1 className='text-2xl    text-black first-letter:text-cyan-400 first-letter:text-4xl font-extrabold first-letter:underline ' >Karem Mahmoud</h1>
             <ul className='flex items-center justify-between gap-x-10 '>
                 <li className='  text-cyan-500 text-xl  hover:text-cyan-500'><a href="#services">services</a> </li>
@@ -56,20 +56,22 @@ function Navbar() {
 
 
         </header>
-        <nav className=' w-full fixed top-0 left-0 bg-white z-50'>
+
+        
+        <nav className=' w-full overflow-hidden fixed top-0 left-0 bg-white z-50'>
     <header className='md:hidden flex justify-between px-8 py-3    items-center drop-shadow-2xl relative'>
-      <h1 className='text-2xl    text-black first-letter:text-cyan-400 first-letter:text-4xl font-extrabold first-letter:underline '>Karem Mahmoud</h1>
+      <h1 className='text-2xl    text-black first-letter:text-cyan-400 first-letter:text-4xl font-extrabold first-letter:underline '>Karem </h1>
       
-      <ul className='flex items-center justify-between gap-10 md:gap-16  '>
+      <ul className='flex items-center justify-between gap-5 md:gap-16  '>
               <li className='  text-gray-800 text-4xl  hover:text-cyan-500'><FaCartPlus size={24}/></li>
               <li className='  text-gray-800 text-4xl  hover:text-cyan-500'> <FaSearch  size={24}/></li>
               <li className='  text-gray-800 text-4xl  hover:text-cyan-500'><FaUser size={24}/></li>
             </ul>
       
-      <p className='cursor-pointer ' onClick={toggleMenu}>
+      {/* <p className='cursor-pointer ' onClick={toggleMenu}>
         <FaBars className='text-cyan-600 first-letter:text-cyan-500 ' size={22} />
-      </p>
-      {showMenu &&(<>
+      </p> */}
+      {/* {showMenu &&(<>
          <ul className="absolute bottom-[-325px] flex flex-col justify-center items-start  left-0 w-full  bg-white p-5  z-50" >
          <li className='mt-5 text-gray-500 text-xl hover:scale-[1.1] hover:text-cyan-500'><a href="#services">services</a></li>
          <li className='mt-5 text-gray-500 text-xl hover:scale-[1.1] hover:text-cyan-500'><a href="#projects">projects</a></li>
@@ -79,15 +81,15 @@ function Navbar() {
          <li className='mt-5 text-gray-500 text-xl hover:scale-[1.1] hover:text-cyan-500'><a href="#contact">contact</a></li>
 
          
-         {/* <li className='mr-10 mt-5  text-xl hover:scale-105 cursor-pointer' onClick={toggleDarkMode}>
+         <li className='mr-10 mt-5  text-xl hover:scale-105 cursor-pointer' onClick={toggleDarkMode}>
          {darkMode ? <FaSun size={22} color='gold' /> : <FaMoon size={22}  className='text-gray-500' />}
-          </li> */}
+          </li>
        </ul>
        
        </>
        
       )}
-     
+      */}
     </header>
     </nav>
         </>
